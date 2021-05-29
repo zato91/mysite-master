@@ -1,4 +1,4 @@
-import { Route, Switch, Redirect } from "react-router-dom";
+import { Route } from "react-router-dom";
 // import Navbar from './components/Navbar'
 import Contact from './pages/Contact'
 import Portfolio from './pages/Portfolio';
@@ -11,10 +11,10 @@ function App() {
     <div className="App">
       
       <div id="background-main">
-      <NavBar style={{ backgroundColor: 'red'}}/>
-      <Route path="/home/" component={Home} />
+      <NavBar />
+      <Route exact path="/" component={Home} />
       </div>
-      <Route path="/portfolio" component={Portfolio} />
+      <Route exact path="/portfolio" component={Portfolio} />
       <Route path="/contact" component={Contact} />
       <Footer />
       {/* <Portfolio/>

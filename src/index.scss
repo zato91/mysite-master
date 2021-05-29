@@ -14,10 +14,29 @@ code {
     monospace;
 }
 
-h1 {
-  color: red;
-}
-
 #background-main {
   background-image: url("apple.jpg");
+}
+
+.link:hover {
+  color: #00f;
+}
+
+#contact-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  #contact-let {
+    flex: 0 1 42%;
+    > div {
+      margin-bottom: 15%;
+    }
+    h4 {
+      margin-bottom: -4%;
+    }
+  }
+  #contact-right {
+    flex: 0 1 42%;
+    height: 500px;
+  }
 }
