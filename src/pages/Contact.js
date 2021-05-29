@@ -1,21 +1,27 @@
 import React  from 'react';
 import Form from '../components/Form.js'
 
-
+// 5b5353
 
 const Contact =()=>{
      
-    return(<>
-        <h1 style={{textAlign:"center"}}>Contact</h1>
-        <h3 style={{textAlign:"center", marginBottom:"-2%"}}>"XXXXXX"</h3>
-        <h3 style={{textAlign:"center"}}>-XX@?</h3>
+    return(
+    <div id="contact-container">
+        <div >
+            <h1 >Contact</h1>
+            <h3 >"XXXXXX"</h3>
+            <h3>-XX@?</h3>
+        </div>
         <div id="contact-container">
             <div id="contact-let" >
                 <div >
                     <h3>Reaching out to me</h3>
-                    <p>minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo,
-                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo,
+                    <p>minim veniam, quis nostrud exercitation ullamco laboris,
+                    ullamco laboris nisi ut aliquip ex ea commodo </p>
+                    <p>minim veniam, 
                     minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </p>
+                    <p>minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo,
+                    minim veniam, quis nostrud exercitation ullamco laboris nisi utliquip ex ea commodo </p>
 
                 </div>
                 <div>
@@ -27,12 +33,12 @@ const Contact =()=>{
                 </div>
 
             </div>
-            <div id="contact-right" >
-                <Form/>
-            </div>
+                <div id="contact-right" >
+                    <Form/>
+                </div>
 
         </div>
-        </>
+    </div>
     )
 }
 

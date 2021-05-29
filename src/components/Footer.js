@@ -40,12 +40,8 @@ return (
             </Column>
         </Row>   
       </Container>
-      <h1 style={{ color: "white",
-				textAlign: "center",
-                fontSize: 20 }}>
-		Phonexxxx  or   Email:xxxx
+	  <Heading style={{textAlign:"center"}}>Phonexxxx  or   Email:xxxx</Heading>
 
-	</h1>
 	<Container>
 		<Row>
 		<Column>

@@ -18,25 +18,55 @@ code {
   background-image: url("apple.jpg");
 }
 
-.link:hover {
-  color: #00f;
-}
-
 #contact-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  background-color: dimgray;
+  color: white;
+  padding-bottom: 2%;
   #contact-let {
     flex: 0 1 42%;
     > div {
-      margin-bottom: 15%;
+      margin-bottom: 8%;
     }
     h4 {
-      margin-bottom: -4%;
+      margin-bottom: -2%;
     }
   }
   #contact-right {
     flex: 0 1 42%;
-    height: 500px;
   }
+}
+
+#formContact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .formItem {
+    flex-basis: 45%;
+    color: red;
+  }
+
+  #buttonCont {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+  }
+  .buttFor {
+    width: 300px;
+  }
+}
+
+#formContact * {
+  font-weight: bolder;
+  color: white;
+
+  border-width: 2px;
+  border-color: black;
+}
+
+.formItem * {
+  font-weight: 100;
 }
