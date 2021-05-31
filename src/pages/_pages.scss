@@ -1,0 +1,62 @@
+#root {
+  background: url("/assets/apple.jpg");
+}
+
+//////////HOME PAGE
+#Home-main {
+  margin-bottom: 5%;
+  text-align: center;
+  height: 12em;
+  font-size: 3em;
+  filter: $text-darker;
+}
+
+////////// PORTFOLIO
+.portfolio-contrainer {
+  background-color: $portfolio-color;
+  padding: 1px 0 4% 0;
+  &.portfolio-contrainer > div:nth-child(1) {
+    font-size: 1.4em;
+    text-align: center;
+    h6 {
+      font-size: 1em;
+    }
+  }
+}
+
+////////// CONTACT PAGE
+#contact-main {
+  background-color: $contact-color;
+  padding-bottom: 5%;
+  padding-top: 1px;
+  > div:nth-child(1) {
+    text-align: center;
+    padding-bottom: 4%;
+    h3 {
+      margin: 0;
+    }
+  }
+  #contact-container {
+    @include flex-rwap-center;
+
+    #contact-let {
+      flex: 0 1 42%;
+      &#contact-let > div:nth-child(1) {
+        margin-bottom: 16%;
+        padding-right: 10em;
+      }
+      &#contact-let > div:nth-child(2) h4 {
+        margin: 0;
+      }
+    }
+    #contact-right {
+      flex: 0 1 42%;
+    }
+  }
+}
+
+.buttonContainer {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}

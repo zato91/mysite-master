@@ -1,9 +1,7 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
-import {Button} from '@material-ui/core';
-import { red } from '@material-ui/core/colors';
-import { useState } from 'react';
+import {ButtonStyled} from '../components/Button';
+
 
 
 
@@ -11,7 +9,6 @@ import { useState } from 'react';
 export default function Form() {
 
  
-
   return (
     <form id="formContact">
      
@@ -33,8 +30,6 @@ export default function Form() {
          
           label="Email"
           placeholder="Enter your email"
-          // Placeholder=
-          // id="standard-full-width"
           fullWidth
           margin="normal"
           
@@ -47,16 +42,11 @@ export default function Form() {
           fullWidth
           margin="normal"
           placeholder="Tape your Message"
-          multiline={true}
           rows={4}
           
         />
-      <div id="buttonCont">
-
-        <Button className="buttFor" style={{color: "white",
-        border: "3px solid white"}} variant="outlined" 
-        >Submit
-        </Button> 
+      <div className="buttonContainer">
+        <ButtonStyled lx >Submit</ButtonStyled>
       </div>  
        
        

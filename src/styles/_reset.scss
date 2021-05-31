@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+
+  font-family: $font-familly;
+  // font-family: "Kaushan Script";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: whitesmoke;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

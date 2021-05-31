@@ -1,0 +1,11 @@
+@mixin flex-wrap-btw {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@mixin flex-rwap-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

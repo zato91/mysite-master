@@ -1,53 +1,39 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import logo from '../assets/logo.svg'
 
 
-
-
-const useStyles = makeStyles((theme) => ({
-    root: {
-      flexGrow: 1,
-    },
-    menuButton: {
-      marginRight: theme.spacing(2),
-    },
-    title: {
-      flexGrow: 1,
-    },
-  }));
-  
-  const linkStyle = {
-    paddingLeft: '3%',
-    textDecoration: 'none',
-    listStyle: 'none',
-    color:'white',
-   
-  };
  
+const useStyles = makeStyles((theme) => ({title: {flexGrow: 1},  }));
+      
 
-const Navbar = () => {
-    const classes = useStyles();
-    
+const Navbar = ({coloR}) => {
+  // const classes = useStyles();
+
+  const {title} = useStyles()
+
+
     
   return (
-    <AppBar position="static" style={{ backgroundColor: 'transparent', boxShadow: 'none'}}>
-    <Toolbar>
-      <Typography variant="h6" className={classes.title}>
-      <img src={logo} alt=""/>
-      </Typography>
 
-     <Link style={linkStyle} className="link" to="/">Home</Link>
-     <Link style={linkStyle} className="link" to="/portfolio">Products</Link>
-     <Link style={linkStyle} className="link" to="/contact">Contact</Link>
-
+      <nav style={coloR}>
      
-    </Toolbar>
-    </AppBar>
+      <Toolbar>
+        <Typography variant="h6" className={title}>
+          <img src={logo} alt=""/>
+        </Typography>
+
+      <Link  className="link" to="/">Home</Link>
+      <Link  className="link" to="/portfolio">Products</Link>
+      <Link  className="link" to="/contact">Contact</Link>
+
+      
+      </Toolbar>
+
+    </nav>
   );
 };
 

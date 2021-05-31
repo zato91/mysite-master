@@ -1,13 +1,13 @@
 import React  from 'react';
 import Form from '../components/Form.js'
 
-// 5b5353
+
 
 const Contact =()=>{
      
     return(
-    <div id="contact-container">
-        <div >
+    <div id="contact-main">
+        <div>
             <h1 >Contact</h1>
             <h3 >"XXXXXX"</h3>
             <h3>-XX@?</h3>

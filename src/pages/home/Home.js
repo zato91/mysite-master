@@ -1,38 +1,27 @@
 import React  from 'react';
-import {Button} from '@material-ui/core';
+import {ButtonStyled} from '../../components/Button';
+import Contact from '../Contact';
+import Portfolio from '../Portfolio';
 
 
 
-  
-    const texStyle = {
-        fontFamily: 'Kaushan Script',
-        // color: "black",
-     }
-
-const buttonStyle = {
-    color:"white",
-    border:"3px solid white",
-  
-}
 
 const Home =()=>{
     
-
-
-    return( 
-        <div style={{textAlign:"center"}}>
-            <h4 style={texStyle}>Hello, I'm</h4>
-            <h1 style={texStyle}>Zara</h1>
-            <p style={texStyle}>UI Developer. UX Desinger. Problem Solver</p>
-         
-            <Button style={buttonStyle} variant="outlined" sx={{mr:2} }>Default</Button>
-            <Button variant="outlined" style={buttonStyle}>Default</Button>
-            
+    return( <>
+        <div id="Home-main">
+            <h4 >Hello, I'm</h4>
+            <h1 >Zara</h1>
+            <p >UI Developer. UX Desinger. Problem Solver</p>
+            <ButtonStyled  md style={{ marginRight:'1em'}}>HELLO</ButtonStyled>
+            <ButtonStyled md >HELLO</ButtonStyled>     
             
         </div>
+        <Portfolio/>
+        <Contact/>
        
        
-    )
+    </>)
 }
 
 
